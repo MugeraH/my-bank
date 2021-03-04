@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/index.js"></script>
+    <title>My Bank</title>
+  </head>
+  <body>
+    <div class="container-fluid main">
+      <h1>Welcome to My-Bank</h1>
+      <div class="row mt-5">
+        <div class="form">
+          <div class="col-md-6 mx-3">
+            <h3>Register New Account</h3>
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" class="form-control" id="fullName" />
+            </div>
+            <div class="form-group">
+              <label for="initialDeposit">Initial Deposit</label>
+              <input type="number" class="form-control" id="initialDeposit" />
+            </div>
+            <button id="createAccount" class="btn btn-outline-success m-4">
+              Create Account
+            </button>
+            <button id="deleteAccount" class="btn btn-outline-danger m-4">
+              Delete Account
+            </button>
+          </div>
+
+          <div class="col-md-6">
+            <h3>Deposit Funds</h3>
+            <div class="form-group">
+              <label for="userDeposit">Deposit Amount</label>
+              <input type="number" class="form-control" id="userDeposit" />
+            </div>
+            <button id="deposit" class="btn btn-outline-primary m-4">
+              Deposit
+            </button>
+
+            <h3>Withdraw Funds</h3>
+            <div class="form-group mt-2">
+              <label for="userWithdraw">Withdraw Amount</label>
+              <input type="number" class="form-control" id="userWithdraw" />
+            </div>
+            <button id="withdraw" class="btn btn-outline-primary mt-4">
+              Withdraw
+            </button>
+          </div>
+        </div>
+        <div id="details">
+          <div class="col-md-12 display mt-3">
+            <div class="col-md-5">
+              <div class="">
+                <p>Welcome <span id="user"></span></p>
+                <p>Your Current balance is</p>
+                <p>BALANCE: <span id="displayBalance"></span></p>
+              </div>
+            </div>
+            <div class="col-md-3 depo">
+              <h4>Deposits</h4>
+              <p>Last Deposit: <span id="depositAmount"></span></p>
+              <p>Total Deposit: <span id="totalDeposit"></span></p>
+            </div>
+            <div class="col-md-3 mx-5">
+              <h4>Withdraw</h4>
+              <p>Last Withdraw: <span id="withdrawAmount"></span></p>
+              <p>Total Withdraws: <span id="totalWithdraw"></span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

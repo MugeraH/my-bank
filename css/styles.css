@@ -1,0 +1,29 @@
+body {
+  text-align: center;
+  background-color: rgb(247, 242, 242);
+}
+
+.main {
+  width: 80%;
+  margin: 0px auto;
+}
+
+.form {
+  display: flex;
+}
+
+#details {
+  display: none;
+}
+.display {
+  height: 150px;
+  border: 3px solid green;
+  color: black;
+  text-align: start;
+  padding: 15px;
+  display: flex;
+}
+
+.depo {
+  border-right: 3px solid green;
+}
