@@ -29,11 +29,16 @@
             <h3>Register New Account</h3>
             <div class="form-group">
               <label for="fullName">Full Name</label>
-              <input type="text" class="form-control" id="fullName" />
+              <input type="text" class="form-control" id="fullName" required />
             </div>
             <div class="form-group">
               <label for="initialDeposit">Initial Deposit</label>
-              <input type="number" class="form-control" id="initialDeposit" />
+              <input
+                type="number"
+                class="form-control"
+                id="initialDeposit"
+                required
+              />
             </div>
             <button id="createAccount" class="btn btn-outline-success m-4">
               Create Account
@@ -47,7 +52,12 @@
             <h3>Deposit Funds</h3>
             <div class="form-group">
               <label for="userDeposit">Deposit Amount</label>
-              <input type="number" class="form-control" id="userDeposit" />
+              <input
+                type="number"
+                class="form-control"
+                id="userDeposit"
+                required
+              />
             </div>
             <button id="deposit" class="btn btn-outline-primary m-4">
               Deposit
@@ -56,7 +66,12 @@
             <h3>Withdraw Funds</h3>
             <div class="form-group mt-2">
               <label for="userWithdraw">Withdraw Amount</label>
-              <input type="number" class="form-control" id="userWithdraw" />
+              <input
+                type="number"
+                class="form-control"
+                id="userWithdraw"
+                required
+              />
             </div>
             <button id="withdraw" class="btn btn-outline-primary mt-4">
               Withdraw
